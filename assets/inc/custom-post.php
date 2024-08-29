@@ -23,7 +23,7 @@
                 'hierarchial'=>true,
                 'show_ui'=>true,
                 'capability_type'=>'post',
-                'rewrite'=>array('slag'=>'a-content'),
+                'rewrite'=>array('slug'=>'a-content'),
                 'supports'=>array('title','thumbnail',),
             )
         );
@@ -56,7 +56,7 @@ function custom_SocialMedia(){
             'hierarchial'=>true,
             'show_ui'=>true,
             'capability_type'=>'post',
-            'rewrite'=>array('slag'=>'SocialMedia'),
+            'rewrite'=>array('slug'=>'SocialMedia'),
             'supports'=>array('title','thumbnail',),
         )
     );
@@ -65,10 +65,10 @@ function custom_SocialMedia(){
 add_action('init','custom_SocialMedia');
 // Logos
 function custom_Logo(){
-    register_post_type('Logo',
+    register_post_type('logos',
     array(
             'labels'=>array(
-                'name'=>('Logos'),
+                'name'=>('Logo'),
                 'singular_name'=>('Logo'),
                 'add_new'=>('Add new Logo'),
                 'add_new_item'=>('Add new Logo'),
@@ -87,7 +87,7 @@ function custom_Logo(){
             'hierarchial'=>true,
             'show_ui'=>true,
             'capability_type'=>'post',
-            'rewrite'=>array('slag'=>'Logo'),
+            'rewrite'=>array('slug'=>'logos'),
             'supports'=>array('title','thumbnail',),
         )
     );
@@ -96,7 +96,7 @@ function custom_Logo(){
 add_action('init','custom_Logo');
 // Banners
 function custom_banner(){
-    register_post_type('Banner',
+    register_post_type('banners',
     array(
             'labels'=>array(
                 'name'=>('Banners'),
@@ -118,7 +118,7 @@ function custom_banner(){
             'hierarchial'=>true,
             'show_ui'=>true,
             'capability_type'=>'post',
-            'rewrite'=>array('slag'=>'Banner'),
+            'rewrite'=>array('slug'=>'banners'),
             'supports'=>array('title','thumbnail',),
         )
     );
@@ -127,7 +127,7 @@ function custom_banner(){
 add_action('init','custom_banner');
 // Videos
 function custom_video(){
-    register_post_type('Video',
+    register_post_type('videos',
     array(
             'labels'=>array(
                 'name'=>('Videos'),
@@ -149,7 +149,7 @@ function custom_video(){
             'hierarchial'=>true,
             'show_ui'=>true,
             'capability_type'=>'post',
-            'rewrite'=>array('slag'=>'Video'),
+            'rewrite'=>array('slug'=>'videos'),
             'supports'=>array('title','thumbnail',),
         )
     );
@@ -158,7 +158,7 @@ function custom_video(){
 add_action('init','custom_video');
 // Campaigns
 function custom_campaign(){
-    register_post_type('Campaign',
+    register_post_type('campaigns',
     array(
             'labels'=>array(
                 'name'=>('Campaigns'),
@@ -180,7 +180,7 @@ function custom_campaign(){
             'hierarchial'=>true,
             'show_ui'=>true,
             'capability_type'=>'post',
-            'rewrite'=>array('slag'=>'Campaign'),
+            'rewrite'=>array('slug'=>'campaigns'),
             'supports'=>array('title','thumbnail',),
         )
     );

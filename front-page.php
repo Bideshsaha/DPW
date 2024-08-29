@@ -12,13 +12,33 @@
                     <p>4258 items</p>
                 </div>
             </div>
+            <div id="owl-slider" class="owl-carousel owl-theme">
+                <!-- <div> Your Content </div> -->
+                <?php 
+            query_posts('post_type=banners&post_status=publish&posts_per_page=3&order=ASC&paged='.
+            get_query_var('post'));
+            
+
+            if(have_posts()) :
+                while(have_posts()) :the_post();
+            ?>
+            <div>
+                <?php echo the_post_thumbnail('banners');?>
+            </div>              
+            <?php 
+                endwhile;
+                endif;
+            ?>
+
+            </div>
             <!-- MiddleBodysection -->
              <div class="middleBody">
+
 <!-- APlusContent, Logo, SocialMedia, Banner sections -->
 <?php
-    $sections = array('a-content', 'Logo', 'SocialMedia', 'Banner');
+    $sections = array('a-content', 'logos', 'SocialMedia', 'campaigns', 'videos'); // Removed 'banners'
     foreach ($sections as $section) {
-        $grid_class = $section === 'Banner' ? 'grid-section-banner' : 'grid-section';
+        $grid_class = 'grid-section'; // Removed the condition for 'banners'
         ?>
         <div class="<?php echo $grid_class; ?>">
             <?php
@@ -47,4 +67,6 @@
                 <div class="pageNumbers"></div>
               </div>
          </div>
+         
 <?php get_footer()?>
+<?php echo 'front-page';?>

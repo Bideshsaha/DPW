@@ -1,7 +1,8 @@
 <?php get_header();?>
 <?php 
 echo 'this is from page';
-die();
+
+
 the_title();
 $current_page_slug = get_post_field('post_name', get_the_ID());
 

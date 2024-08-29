@@ -15,3 +15,8 @@ include_once('assets/inc/custom-post.php');
 include_once('assets/inc/theme-functions.php');
 
 
+
+//including enqueue files
+include_once('assets/inc/enqueue.php');
+
+

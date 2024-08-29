@@ -1,8 +1,9 @@
 
-    <?php get_header();
+    <?php
+    die(); get_header();
     
     echo 'this is from index';
-die();?>
+?>
         <!-- Main body section -->
          <div class="body">
             <!-- upperBodysection -->
