@@ -1,7 +1,5 @@
 <?php get_header();?>
 <?php echo'this is main archive'?>
-
-
    
 <div class="middleBody">
                 <div class="grid-section">

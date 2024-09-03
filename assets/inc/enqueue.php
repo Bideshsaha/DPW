@@ -20,3 +20,5 @@ function dpw_css_js_file_calling() {
     wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'dpw_css_js_file_calling');
+
+//add admin_enquque scripts

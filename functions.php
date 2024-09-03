@@ -19,4 +19,11 @@ include_once('assets/inc/theme-functions.php');
 //including enqueue files
 include_once('assets/inc/enqueue.php');
 
+//create a function receives current page slug return related custom posttype slug
+
+//add meta box
+include_once('assets/inc/metabox.php');
+
+//add widget
+include_once('assets/inc/widgets_register.php');
 

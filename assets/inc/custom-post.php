@@ -34,7 +34,7 @@
 
 //     Social Media
 function custom_SocialMedia(){
-    register_post_type('SocialMedia',
+    register_post_type('socialmedia',
     array(
             'labels'=>array(
                 'name'=>('SocialMedia'),
@@ -56,7 +56,7 @@ function custom_SocialMedia(){
             'hierarchial'=>true,
             'show_ui'=>true,
             'capability_type'=>'post',
-            'rewrite'=>array('slug'=>'SocialMedia'),
+            'rewrite'=>array('slug'=>'socialmedia'),
             'supports'=>array('title','thumbnail',),
         )
     );
