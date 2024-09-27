@@ -150,7 +150,7 @@ function custom_video(){
             'show_ui'=>true,
             'capability_type'=>'post',
             'rewrite'=>array('slug'=>'videos'),
-            'supports'=>array('title','thumbnail',),
+            'supports'=>array('title','thumbnail','editor'),
         )
     );
     add_theme_support('post-thumbnails');

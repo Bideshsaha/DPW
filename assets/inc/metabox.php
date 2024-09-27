@@ -1,7 +1,7 @@
 <?php
 
 function dpw_register_isvisible_metabox(){
-    add_meta_box('is_visible','Meta Box Control Panel','dpw_isvisible_markup_cb',['a-content','SocialMedia','logos','videos','campaigns']);
+    add_meta_box('is_visible','Meta Box Control Panel','dpw_isvisible_markup_cb',['a-content','SocialMedia','logos','videos','campaigns','banners']);
 }
 add_action('add_meta_boxes','dpw_register_isvisible_metabox');
 

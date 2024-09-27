@@ -8,6 +8,3 @@
 
 
 <?php get_footer()?>
-
-
-<?php echo 'front-page';?>

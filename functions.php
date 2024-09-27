@@ -40,10 +40,10 @@ function dpw_get_cpt_slug($current_page_slug) {
     }
 }
 //function for get the parent page title in the single page
-function dpw_get_parent_page_title($current_post_type) {
+function dpw_get_parent_page_title_in_single_page($post_name) {
 
    
-    switch($current_post_type){
+    switch($post_name){
         case "socialmedia":
             return 'Social Media';
         case "a-content":
@@ -113,3 +113,12 @@ function dpw_pageTitle_callback(){ ?>
 
         
 // }
+
+
+// function dpw_iframe_func($atts) {
+//     extract(shortcode_atts(array(
+//         'src' => ''
+//     ), $atts));
+//     return '<iframe width="853" height="480" src="{$src}" title="Mission, Vision and Purpose of Digital PR World" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+// }
+// add_shortcode('dpw_iframe', 'dpw_iframe_func');
