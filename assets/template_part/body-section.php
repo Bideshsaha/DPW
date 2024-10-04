@@ -1,5 +1,5 @@
 <div class="body">
-    <div id="owl-slider" class="owl-carousel owl-theme ">
+    <div id="owl-slider" class="owl-carousel owl-theme owl-item">
         <!-- <div> Your Content </div> -->
         <?php
         query_posts(array(

@@ -37,6 +37,9 @@
 .show-more a {
   text-decoration: none;
 }
+.show-more a:hover {
+  color:white;
+}
 /* home show-more button design start end*/
 
 /* Header area start */
@@ -72,6 +75,10 @@
 .homeMenu a {
   text-decoration: none;
   color: black;
+  font-size: 18px;
+}
+.homeMenu a:hover {
+  color: var(--darkblue);
 }
 .icon {
   display: none;
@@ -90,7 +97,7 @@
   text-decoration: none;
   color: black;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 /* Breadcrumb end */
 
@@ -160,8 +167,16 @@
   justify-items: center;
   grid-template-columns: repeat(3, auto);
 }
-.card {
+/* .card {
   border: 2px solid black;
+} */
+.card:hover{
+  transform: scale(1.03);
+  transition: 0.5s;
+  filter: drop-shadow(0 0 10px var(--lightblue));
+}
+.card img{
+  box-shadow: 0 0 20px var(--lightblue);
 }
 .cpost .wp-post-image {
   width: 450px;
@@ -186,6 +201,15 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-row-gap: 1rem;
+}
+.notfound{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.notfound img{
+  width: 600px;
+  height: 300px;
 }
 
 /* style for page.php end */
@@ -338,6 +362,15 @@
   }
   .singleaplus .wp-post-image {
     height: auto;
+  }
+  .notfound{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .notfound img{
+    width: 350px;
+    height: 300px;
   }
 
   /* footer */
