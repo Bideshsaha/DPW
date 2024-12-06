@@ -28,7 +28,7 @@
 <!-- Footer ended here -->
 <!-- </div> -->
 <?php wp_footer(); ?>
-
+<button id="ajax_call">Ajax Call</button>
 </body>
 
 </html>

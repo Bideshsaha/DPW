@@ -7,6 +7,20 @@ jQuery(document).ready(function(){
         items:1,
     });
 
+      //Ajax call
+      jQuery("#ajax_call").click(function() {
+        console.log("Calling ajax!!!")
+        jQuery.ajax({
+          type: "post",
+          dataType: "json",
+          url: my_ajax_object.ajax_url,
+          data: {'fname': 'Sourav', action:'get_data_nli'},
+          success: function(msg){
+              console.log(msg);
+          }
+      });
+    })
+
   });
 
   
@@ -19,4 +33,6 @@ jQuery(document).ready(function(){
       x.style.display = "block";
     }
   }
+
+
 
