@@ -18,7 +18,7 @@
             <div class="left-upperHeader">
                 <div class="list">
                     <!-- codes will be added -->
-                    <p>Kolkata: 4/1A, Asgar Mistry Lane, Kolkata, West Bengal - 700046.hi</p>
+                    <p>Kolkata: 4/1A, Asgar Mistry Lane, Kolkata, West Bengal - 700046.</p>
                 </div>
             </div>
             <div class="right-upperHeader">
